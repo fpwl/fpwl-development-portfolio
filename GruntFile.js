@@ -54,21 +54,22 @@ module.exports = function (grunt) {
                 }
             }
         },
+        prettysass: {
+            options: {
+                alphabetize: true
+            },
+            app: {
+                src: ['src/sass/**/*.scss']
+            },
+        },
         watch: {
             sass: {
-                files: ["src/sass/**/*.*"],
+                files: ["src/sass/**/*.scss"],
                 tasks: ["sass"]
-            },
-            css: {
-                files: ["src/css/style.css"],
-                tasks: ["csslint"]
             },
             js: {
                 files: ["src/js/**/*.*"],
                 tasks: ["jshint"]
-            },
-            options: {
-                livereload: true,
             },
         }
 
@@ -89,12 +90,15 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-htmlmin');
     // run gruntwatch
     grunt.loadNpmTasks('grunt-contrib-watch');
+    // run prettysass
+    grunt.loadNpmTasks('grunt-prettysass');
 
 
 
     // In terminal if entered 'grunt debug', 
     // it will only run the tasks inside the array 
-    grunt.registerTask("min", ["csslint", "cssmin", "jshint", "uglify", "htmlmin"]);
+    grunt.registerTask("min", ["sass", "prettysass", "csslint", "cssmin", "jshint", "uglify", "htmlmin"]);
+    grunt.registerTask("compileSass", ["sass"]);
     grunt.registerTask("w", ["watch"]);
 
 };

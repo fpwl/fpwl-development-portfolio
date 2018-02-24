@@ -1,8 +1,87 @@
 body {
   font-family: 'Nunito', sans-serif;
-  font-weight: 300; }
+  font-weight: 300;
+  margin: 0;
+  padding: 0; }
 
 img {
   height: 35px; }
+
+.header-container {
+  height: 100%;
+  width: 100vw; }
+  .header-container .nav-wrapper {
+    z-index: 1;
+    background-color: #C6E9FA;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 75px;
+    width: 100%; }
+    .header-container .nav-wrapper .desktop-nav {
+      display: none; }
+    .header-container .nav-wrapper .mobile-nav {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-content: center;
+      padding: 10px; }
+      .header-container .nav-wrapper .mobile-nav .filler-div1 {
+        width: 33%;
+        height: 100%; }
+      .header-container .nav-wrapper .mobile-nav .fpwl-logo {
+        width: 33%;
+        margin: 0 auto;
+        margin-top: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .header-container .nav-wrapper .mobile-nav .fpwl-logo img {
+          height: 55px; }
+      .header-container .nav-wrapper .mobile-nav .hamburger-wrapper {
+        width: 33%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center; }
+        .header-container .nav-wrapper .mobile-nav .hamburger-wrapper .hamburger {
+          color: white;
+          font-size: 1.8em;
+          padding: 5px; }
+  .header-container .mobile-nav-popout {
+    z-index: 0;
+    width: 100%;
+    height: 0px;
+    border-top: solid 0px #99D1F1;
+    border-bottom: solid 4px #99D1F1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    transition: height 0.5s; }
+    .header-container .mobile-nav-popout .mobile-nav {
+      margin-top: 5px; }
+      .header-container .mobile-nav-popout .mobile-nav .mobile-nav-items {
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+        text-align: center; }
+        .header-container .mobile-nav-popout .mobile-nav .mobile-nav-items li {
+          margin: 10px; }
+        .header-container .mobile-nav-popout .mobile-nav .mobile-nav-items a {
+          text-decoration: none;
+          font-family: "Asap", sans-serif;
+          font-size: 20px;
+          font-weight: 700;
+          color: #99D1F1;
+          text-transform: uppercase;
+          letter-spacing: 0.5px; }
+    .header-container .mobile-nav-popout .nav-socialmedia {
+      margin-bottom: 15px; }
+      .header-container .mobile-nav-popout .nav-socialmedia img {
+        margin: 2px; }
+  .header-container .mobile-nav-popout.clicked {
+    height: 220px;
+    border-top: solid 4px #99D1F1; }
 
 /*# sourceMappingURL=style.css.map */
