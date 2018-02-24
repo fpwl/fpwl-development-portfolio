@@ -6,9 +6,13 @@
 
         <title>Florence Lo | Portfolio</title>
 
-        <!-- STYLE SHEET LINKS -->
+        <!-- STYLE SHEET AND CDNS -->
+
+        <!-- Google Font Links -->
+        <link href="https://fonts.googleapis.com/css?family=Asap:600,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Nunito:300,600" rel="stylesheet">
         <!-- Font Awesome -->
-        <link rel="stylesheet" href="../node_modules/font-awesome/css/font-awesome.min.css"/>
+        <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
         <!-- Custom CSS -->
         <link rel="stylesheet" href="css/style.css"/>
 
@@ -16,17 +20,187 @@
 
     <body>
         <header class="header-container">
-            <div class="nav-bar">
-                <div class="">
-
+            <div class="nav-wrapper">
+                <div class="mobile-nav">
+                    <a href="#"><img src="img/logosAndIcons/fpwlLogo.svg" class="fpwl-logo" alt="fpwl logo"/></a>
+                    <i class="fas fa-bars hamburger" id="hamburgerIcon"></i>
+                </div>
+                <div class="desktop-nav">
+                    <ul class="desktop-nav-items">
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">About</a></li>
+                        <li>
+                            <a href="#"><img src="img/logosAndIcons/fpwlLogo.svg" class="fpwl-logo" alt="fpwl logo"/></a>
+                        </li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mobile-nav-popout">
+                <div class="mobile-nav">
+                    <ul class="mobile-nav-items">
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="socialmedia-icon-wrapper nav-socialmedia">
+                    <a href="#"><img src="img/logosAndIcons/behanceIcon.svg" class="behance-icon" alt="behance icon"/></a>
+                    <a href="#"><img src="img/logosAndIcons/facebookIcon.svg" class="facebook-icon" alt="facebook icon"/></a>
+                    <a href="#"><img src="img/logosAndIcons/githubIcon.svg" class="github-icon" alt="fpwl icon"/></a>
+                    <a href="#"><img src="img/logosAndIcons/pinterestIcon.svg" class="pinterest-icon" alt="fpwl icon"/></a>
                 </div>
             </div>
         </header>
+        
+        <section class="landing-section-container">
+            <div class="landing-section-wrapper">
+                <div class="hello-text-wrapper">
+                    <h1 class="hello-text">
+                        <strong class="hello">hello!</strong>
+                        <strong>i am the</strong>
+                        <strong class="designer">designer</strong>
+                        <strong>you are</strong>
+                        <strong class="looking">looking</strong>
+                        <strong>for!</strong>
+                    </h1>
+                </div>
+                <p>Thank you for your interest in my work. Enjoy!</p>
+                <i class="fas fa-angle-down down-arrow" id="downArrow"></i>
+            </div>
+        </section>
 
+        <section class="portfolio-section-container">
+            <div class="portfolio-section-wrapper">
+                <div class="portfolio-header-wrapper">
+                    <h1 class="section-header portfolio-header right-header" id="portfolioHeader">Portfolio</h1>
+                </div>
+                <div class="portfolio-cards-wrapper">
+                    <div class="card-wrapper">
+                        <div class="card-image-wrapper">
+                            <a href="#"><img src="#" alt="project 1"></a>
+                        </div>
+                        <div class="card-title-wrapper">
+                            <p class="card-title"><strong class="project-name">Project Name:</strong>Project Pracitce</p>
+                        </div>
+                    </div>
+                    <div class="card-wrapper">
+                        <div class="card-image-wrapper">
+                            <a href="#">
+                                <img src="#" alt="project 1">
+                            </a>
+                        </div>
+                        <div class="card-title-wrapper">
+                            <p class="card-title">
+                                <strong class="project-name">Project Name:</strong>Project Pracitce</p>
+                        </div>
+                    </div>
+                    <div class="card-wrapper">
+                        <div class="card-image-wrapper">
+                            <a href="#">
+                                <img src="#" alt="project 1">
+                            </a>
+                        </div>
+                        <div class="card-title-wrapper">
+                            <p class="card-title">
+                                <strong class="project-name">Project Name:</strong>Project Pracitce</p>
+                        </div>
+                    </div>
+                    <div class="card-wrapper">
+                        <div class="card-image-wrapper">
+                            <a href="#">
+                                <img src="#" alt="project 1">
+                            </a>
+                        </div>
+                        <div class="card-title-wrapper">
+                            <p class="card-title">
+                                <strong class="project-name">Project Name:</strong>Project Pracitce</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="view-more-wrapper">
+                    <p>View more projects</p>
+                    <i class="fas fa-angle-double-right right-arrow" id="rightArrow"></i>
+                </div>
+            </div>
+        </section>
 
-        <script src=""></script>
-        <!-- Grunt HTML Live reload link -->
-        <script src="//localhost:35729/livereload.js"></script>
+        <section class="about-section-container">
+            <div class="about-section-wrapper">
+                <div class="about-header-wrapper">
+                    <h1 class="section-header about-header left-header" id="aboutHeader">About</h1>
+                </div>
+                <div class="about-blurb-wrapper">
+                    <p class="intro-paragraph">
+                        Hi! My name is Florence Lo and I am a multidisciplinary designer based in Wellington, New Zealand.
+                    </p>
+                    <p>
+                        I originally solely practiced graphic design but due to my increasing curiosty with the digital creative industry I had
+                        to explore and find out more! From my studies and work experience I have had the opportunity to be curious and develop skills
+                        in multiple digital practices, which allowed me to approach client solutions different perspectives.
+                    </p>
+                    <p>
+                        The style of my work is predominantly vector based, therefore I am able to produce work which is clean, simple and comtemporary
+                        allowing for beautiful and effective designs.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="service-section-container">
+            <div class="service-section-wrapper">
+                <div class="service-header-wrapper">
+                    <h1 class="section-header service-header right-header" id="serviceHeader">Service</h1>
+                </div>
+                <div class="service-blurb-wrapper">
+                    <p class="service-blurb">
+                        As a multidisciplinary designer, I can provide creative solutions using various digital practices to fit your needs. 
+                    </p>
+                    <h3 class="service-type-list">Graphic Design</h3>
+                    <h3 class="service-type-list">Web Development</h3>
+                    <h3 class="service-type-list">UX/UI Design</h3>
+                    <h3 class="service-type-list">Animation</h3>
+                    <h3 class="service-type-list">Photography</h3>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section-container">
+            <div class="contact-section-wrapper">
+                <div class="contact-header-wrapper">
+                    <h1 class="section-header contact-header left-header" id="contactHeader">Contact</h1>
+                </div>
+                <div class="contact-blurb-wrapper">
+                    <p class="contact-blurb">
+                        Interested in working together? or do you have questions about my work?
+                    </p>
+                    <h3 class="contact-love">I would LOVE to hear from you!</h3>
+                    <p class="contact-email">
+                        <strong class="email-title">Email:</strong><br>
+                        florence.lo@hotmail.com
+                    </p>
+                    <div class="contact-button">
+                        <a href="#"><h2 class="contact-me">Contact Me</h2></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="foot-container">
+            <div class="socialmedia-icon-wrapper footer-socialmedia">
+                <a href="#"><img src="img/logosAndIcons/behanceIcon.svg" class="behance-icon" alt="behance icon"/></a>
+                <a href="#"><img src="img/logosAndIcons/facebookIcon.svg" class="facebook-icon" alt="facebook icon"/></a>
+                <a href="#"><img src="img/logosAndIcons/githubIcon.svg" class="github-icon" alt="fpwl icon"/></a>
+                <a href="#"><img src="img/logosAndIcons/pinterestIcon.svg" class="pinterest-icon" alt="fpwl icon"/></a>
+            </div>
+            <div class="copyright-wrapper">
+                <p class="copyright-text">&#169; Copyright Florence Pui Win Lo 2018</p>
+            </div>
+        </footer>
+        
         <script src="js/custom.js"></script>
     </body>
 
